@@ -92,7 +92,6 @@ void main() {
   runTestsOnline(
     () {
       test(
-          //em portugues
           'deve retornar dados remotos quando a chamada à fonte de dados remota for bem-sucedida',
           () async {
         // arrange
@@ -118,7 +117,6 @@ void main() {
         },
       );
       test(
-          //em portugues
           'Deve retornar server failure   quando a chamada à fonte de dados remota for mal-sucedida',
           () async {
         // arrange
@@ -197,7 +195,6 @@ void main() {
   runTestsOnline(
     () {
       test(
-          //em portugues
           'Deve retornar dados remotos quando a chamada à fonte de dados remota for bem-sucedida',
           () async {
         // arrange
@@ -223,7 +220,6 @@ void main() {
         },
       );
       test(
-          //em portugues
           'Deve retornar server failure   quando a chamada à fonte de dados remota for mal-sucedida',
           () async {
         // arrange

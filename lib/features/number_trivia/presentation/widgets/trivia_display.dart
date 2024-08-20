@@ -25,7 +25,7 @@ class TriviaDisplay extends StatelessWidget {
           child: Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              decoration: BoxDecoration(),
+              decoration: const  BoxDecoration(),
               child: Text(
                 numberTrivia.text,
                 style: const TextStyle(fontSize: 22),

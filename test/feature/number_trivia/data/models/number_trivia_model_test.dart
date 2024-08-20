@@ -10,7 +10,6 @@ void main() {
   const tNumberTriviaModel = NumberTriviaModel(number: 1, text: 'Test Text');
 
   test(
-    // em portugues:
     'Deve ser uma subclasse da entidade NumberTrivia',
     () async {
       // assert
@@ -36,7 +35,6 @@ void main() {
       );
 
       test(
-        // em portugues:
         'Deve retornar um modelo válido quando o JSON number é considerado um double',
         () async {
           // arrange

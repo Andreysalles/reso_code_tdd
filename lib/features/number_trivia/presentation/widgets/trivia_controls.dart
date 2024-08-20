@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../bloc/number_trivia_bloc.dart';
@@ -28,16 +27,13 @@ class TriviaControlsState extends State<TriviaControls> {
           child: TextField(
             controller: controller,
             keyboardType: TextInputType.number,
-            
-        
             decoration: const InputDecoration(
               isDense: true,
               filled: true,
-              fillColor: Color.fromARGB(255,235,236,238) ,
+              fillColor: Color.fromARGB(255, 235, 236, 238),
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(12)),
-                borderSide: BorderSide.none
-              ),
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                  borderSide: BorderSide.none),
               hintText: 'Número',
             ),
             onChanged: (value) {
@@ -62,18 +58,21 @@ class TriviaControlsState extends State<TriviaControls> {
                   },
                   child: const Text(
                     'Buscar',
-                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
             ),
             Expanded(
               child: ElevatedButton(
-             
                 onPressed: () {
                   dispatchRandom(context);
                 },
-                child: const Text('Get random trivia', style: TextStyle(fontWeight: FontWeight.bold),),
+                child: const Text(
+                  'Get random trivia',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
               ),
             ),
           ],
